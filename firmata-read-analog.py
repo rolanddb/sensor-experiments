@@ -26,7 +26,7 @@ it.start()
 for pin in PINS:
     board.analog[pin].enable_reporting()
  
-# Loop for reading the input. Duration approx. 10 s
+# Loop that keeps printing values
 while 1:
     for pin in PINS:
         print "Pin %i : %s" % (pin, board.analog[pin].read())
